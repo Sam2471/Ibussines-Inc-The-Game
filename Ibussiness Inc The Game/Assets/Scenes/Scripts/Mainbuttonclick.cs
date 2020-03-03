@@ -8,7 +8,7 @@ public class Mainbuttonclick : MonoBehaviour
 
     public void Clickonbutton()
     {
-        textBox.SetActive(true);
+        Globalnotcookies.Countnotforcookies += 1;
     }
 
 
