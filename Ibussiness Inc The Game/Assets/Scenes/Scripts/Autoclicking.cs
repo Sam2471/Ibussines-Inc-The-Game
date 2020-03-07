@@ -11,6 +11,7 @@ public class Autoclicking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Noncookieincrease = GlobalBaker.bakepersec;
         Internalincrease = Noncookieincrease;
         if (Creatingnoncookie == false)
         {

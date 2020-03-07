@@ -9,6 +9,10 @@ public class Perchaselog : MonoBehaviour
     public void StartAutononcookie()
     {
         Autononcookie.SetActive(true);
-     
+        Globalcash.Countcash -= GlobalBaker.bakervalue;
+        GlobalBaker.bakervalue *= 2;
+        GlobalBaker.turnoffbutton = true;
+        GlobalBaker.bakepersec += 1;
+        GlobalBaker.numofbakers += 1;
     }
 }
