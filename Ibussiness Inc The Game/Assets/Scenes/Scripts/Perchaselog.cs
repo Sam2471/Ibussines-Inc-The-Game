@@ -5,6 +5,7 @@ using UnityEngine;
 public class Perchaselog : MonoBehaviour
 {
     public GameObject Autononcookie;
+    public GameObject Autosell;
 
     public void StartAutononcookie()
     {
@@ -14,5 +15,14 @@ public class Perchaselog : MonoBehaviour
         GlobalBaker.turnoffbutton = true;
         GlobalBaker.bakepersec += 1;
         GlobalBaker.numofbakers += 1;
+    }
+    public void StartAutosell()
+    {
+        Autosell.SetActive(true);
+        Globalcash.Countcash -= GlobalShop.shopvalue;
+        GlobalShop.shopvalue *= 2;
+        GlobalShop.turnoffbutton = true;
+        GlobalShop.shoppersec += 1;
+        GlobalShop.numofshops += 1;
     }
 }

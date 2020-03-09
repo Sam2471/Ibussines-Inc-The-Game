@@ -9,20 +9,13 @@ public class GlobalBaker : MonoBehaviour
     public GameObject realbutton;
     public GameObject faketext;
     public GameObject realtext;
-    public static int bakervalue = 5;
+    public static int bakervalue = 10;
     public int currentcash;
     public static bool turnoffbutton = false;
     public GameObject bakerstats;
     public static int numofbakers;
     public static int bakepersec;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         currentcash = Globalcash.Countcash;
@@ -34,6 +27,12 @@ public class GlobalBaker : MonoBehaviour
         {
             fakebutton.SetActive(false);
             realbutton.SetActive(true);
+        }
+
+        if (currentcash < bakervalue)
+        {
+            fakebutton.SetActive(true);
+            realbutton.SetActive(false);
         }
 
         if (turnoffbutton == true)
