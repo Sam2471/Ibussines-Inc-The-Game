@@ -1375,6 +1375,7 @@ GameObject:
   - component: {fileID: 920866174}
   - component: {fileID: 920866175}
   - component: {fileID: 920866176}
+  - component: {fileID: 920866177}
   m_Layer: 0
   m_Name: Mechanicobject
   m_TagString: Untagged
@@ -1486,9 +1487,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   savegamecash: 0
-  savevalue: 10
   saveButton: {fileID: 1588600608}
   savetext: {fileID: 927456908}
+--- !u!114 &920866177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920866169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f78b877caf28c44984057161b4abb5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savednoncookies: 0
+  savedcash: 0
+  savedbakers: 0
+  savedshops: 0
+  savedvalue: 0
 --- !u!1 &927456908
 GameObject:
   m_ObjectHideFlags: 0
