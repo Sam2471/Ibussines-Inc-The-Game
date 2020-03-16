@@ -11,6 +11,7 @@ public class Autoclicking : MonoBehaviour
     void Update()
     {
         Noncookieincrease = GlobalBaker.bakepersec;
+        Noncookieincrease = GlobalBaker2.bakepersec;
         Internalincrease = Noncookieincrease;
         if (Creatingnoncookie == false)
         {

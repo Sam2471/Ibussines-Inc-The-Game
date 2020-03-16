@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Gameloader : MonoBehaviour
 {
-    public int savednoncookies;
-    public int savedcash;
-    public int savedbakers;
-    public int savedshops;
-    public int savedvalue;
+    public static int savednoncookies;
+    public static int savedcash;
+    public static int savedbakers;
+    public static int savedshops;
+    public static int savedvalue;
 
     void Start()
     {

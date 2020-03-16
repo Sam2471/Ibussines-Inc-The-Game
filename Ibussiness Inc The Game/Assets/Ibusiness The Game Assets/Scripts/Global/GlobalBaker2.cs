@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GlobalBaker : MonoBehaviour
+public class GlobalBaker2 : MonoBehaviour
 {
     public GameObject fakebutton;
     public GameObject realbutton;
     public GameObject faketext;
     public GameObject realtext;
-   
-    public static int bakervalue = 10;
+    
+    public static int bakervalue = 5;
 
     public int currentcash;
     public static bool turnoffbutton = false;
