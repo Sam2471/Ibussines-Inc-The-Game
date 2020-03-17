@@ -21,7 +21,7 @@ public class GlobalBaker2 : MonoBehaviour
     void Update()
     {
         currentcash = Globalcash.Countcash;
-        bakerstats.GetComponent<Text>().text = "NonBaker: " + numofbakers + " @ " + bakepersec + " per second";
+        
         faketext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
         realtext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
 

@@ -628,6 +628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 818b37a1db8904a4c869f3d0aef76fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Autoclickload: {fileID: 0}
+  Autocashload: {fileID: 0}
 --- !u!4 &758027690
 Transform:
   m_ObjectHideFlags: 0

@@ -203,7 +203,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 827796790}
-        m_MethodName: StartAutosell
+        m_MethodName: StartAutosell1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -361,7 +361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03580c9daf2133a44962924bfc7682e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Creatingcash: 0
   Internalincrease: 0
 --- !u!4 &184168457
 Transform:
@@ -854,7 +853,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 827796790}
-        m_MethodName: StartAutosell
+        m_MethodName: StartAutosell1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2347,6 +2346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f78b877caf28c44984057161b4abb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Autoclickload: {fileID: 1240013462}
+  Autocashload: {fileID: 184168455}
 --- !u!114 &920866178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2600,7 +2601,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 827796790}
-        m_MethodName: StartAutosell
+        m_MethodName: StartAutosell2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2679,8 +2680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76db219e471fdf24eb760c07c21975f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Creatingnoncookie: 0
-  Internalincrease: 0
+  Internalincrease1: 0
 --- !u!4 &1240013464
 Transform:
   m_ObjectHideFlags: 0
@@ -2778,7 +2778,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 827796790}
-        m_MethodName: StartAutosell
+        m_MethodName: StartAutosell2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4057,6 +4057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1695977528}
   - component: {fileID: 1695977529}
+  - component: {fileID: 1695977530}
   m_Layer: 0
   m_Name: Option2
   m_TagString: Untagged
@@ -4096,6 +4097,24 @@ MonoBehaviour:
   realtext: {fileID: 813111151}
   currentcash: 0
   bakerstats: {fileID: 796386344}
+--- !u!114 &1695977530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695977527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ade73d400da454ca99acc674eb463f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fakebutton: {fileID: 1011975074}
+  realbutton: {fileID: 1250776620}
+  faketext: {fileID: 1898553206}
+  realtext: {fileID: 948465977}
+  currentcash: 0
+  shopstats: {fileID: 831974033}
 --- !u!1 &1702959021
 GameObject:
   m_ObjectHideFlags: 0

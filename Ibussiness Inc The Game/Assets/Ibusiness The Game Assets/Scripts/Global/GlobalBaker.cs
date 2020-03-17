@@ -17,11 +17,13 @@ public class GlobalBaker : MonoBehaviour
     public GameObject bakerstats;
     public static int numofbakers;
     public static int bakepersec;
+    public static int allbakers;
+    public static int fullbps;
 
     void Update()
     {
         currentcash = Globalcash.Countcash;
-        bakerstats.GetComponent<Text>().text = "NonBaker: " + numofbakers + " @ " + bakepersec + " per second";
+        bakerstats.GetComponent<Text>().text = "NonBaker: " + allbakers + " @ " + fullbps + " per second";
         faketext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
         realtext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
 
