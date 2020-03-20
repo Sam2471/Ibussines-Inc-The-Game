@@ -95,15 +95,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - _Rotation: 101.995705
-=======
-    - _Rotation: 1080.0569
->>>>>>> ca78d09063cec167a83f54591d1b641ccbe43f11
-=======
-    - _Rotation: 305.66794
->>>>>>> parent of 301a8d3... 563415
+    - _Rotation: 15.788951
     - _SrcBlend: 1
     - _SunDisk: 2
     - _SunSize: 0.732
