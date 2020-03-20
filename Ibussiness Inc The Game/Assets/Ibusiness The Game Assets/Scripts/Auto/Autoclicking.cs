@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Autoclicking : MonoBehaviour
 {
-    public bool Creatingnoncookie = false;
-    public static int Noncookieincrease = 1;
-    public int Internalincrease;
+    public static bool Creatingnoncookie = false;
+    public static int Noncookieincrease1 = 1;
+    public int Internalincrease1;
+    
+
+   
 
     void Update()
     {
-        Noncookieincrease = GlobalBaker.bakepersec;
-        Internalincrease = Noncookieincrease;
+        Noncookieincrease1 = GlobalBaker.bakepersec + GlobalBaker2.bakepersec;
+        
+        Internalincrease1 = Noncookieincrease1;
+        
         if (Creatingnoncookie == false)
         {
             Creatingnoncookie = true;
@@ -21,7 +26,7 @@ public class Autoclicking : MonoBehaviour
 
     IEnumerator Creatingthenoncookie ()
     {
-        Globalnotcookies.Countnotforcookies += Internalincrease;
+        Globalnotcookies.Countnotforcookies += Internalincrease1;
         yield return new WaitForSeconds(1);
         Creatingnoncookie = false;
             

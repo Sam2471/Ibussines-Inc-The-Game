@@ -3,41 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GlobalShop : MonoBehaviour
+public class GlobalBaker2 : MonoBehaviour
 {
     public GameObject fakebutton;
     public GameObject realbutton;
     public GameObject faketext;
     public GameObject realtext;
-
-    public static int shopvalue = 20;
+    
+    public static int bakervalue = 5;
 
     public int currentcash;
     public static bool turnoffbutton = false;
-    public GameObject shopstats;
+    public GameObject bakerstats;
+    public static int numofbakers;
+    public static int bakepersec;
 
-    public static int numofshops;
-    public static int shoppersec;
-    public static int allshops;
-    public static int fullsps;
-
-
-   
     void Update()
     {
         currentcash = Globalcash.Countcash;
-        shopstats.GetComponent<Text>().text = "Shops: " + allshops + " @ " + fullsps + " per second";
-        faketext.GetComponent<Text>().text = "Buy Shop £" + shopvalue;
-        realtext.GetComponent<Text>().text = "Buy Shop £" + shopvalue;
+        
+        faketext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
+        realtext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
 
-        if (currentcash >= shopvalue)
+        if (currentcash >= bakervalue)
         {
             fakebutton.SetActive(false);
-            realbutton.SetActive(true);           
-                      
+            realbutton.SetActive(true);
         }
 
-        if (currentcash < shopvalue)
+        if (currentcash < bakervalue)
         {
             fakebutton.SetActive(true);
             realbutton.SetActive(false);

@@ -34,6 +34,9 @@ public class Savegame : MonoBehaviour
         PlayerPrefs.SetInt("SavedShops", GlobalShop.numofshops);
         savevalue *= 2;
         PlayerPrefs.SetInt("SavedValue", savevalue);
+        PlayerPrefs.SetInt("Baker", Perchaselog.shop);
+        PlayerPrefs.SetInt("shop", Perchaselog.baker);
+
     }
 
 }

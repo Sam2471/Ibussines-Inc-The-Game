@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class AutoSell : MonoBehaviour
 {
-    public bool Creatingcash = false;
+    public static bool Creatingcash = false;
     public static int cashincrease = 1;
     public int Internalincrease;
 
 
     void Update()
     {
-        cashincrease = GlobalShop.shoppersec;
+        cashincrease = GlobalShop.shoppersec +  GlobalShop2.shoppersec;
         Internalincrease = cashincrease;
         if (Creatingcash == false)
         {

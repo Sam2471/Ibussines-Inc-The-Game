@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GlobalShop : MonoBehaviour
+public class GlobalShop2 : MonoBehaviour
 {
     public GameObject fakebutton;
     public GameObject realbutton;
     public GameObject faketext;
     public GameObject realtext;
 
-    public static int shopvalue = 20;
+    public static int shopvalue = 10;
 
     public int currentcash;
     public static bool turnoffbutton = false;
@@ -18,15 +18,12 @@ public class GlobalShop : MonoBehaviour
 
     public static int numofshops;
     public static int shoppersec;
-    public static int allshops;
-    public static int fullsps;
-
 
    
     void Update()
     {
         currentcash = Globalcash.Countcash;
-        shopstats.GetComponent<Text>().text = "Shops: " + allshops + " @ " + fullsps + " per second";
+        
         faketext.GetComponent<Text>().text = "Buy Shop £" + shopvalue;
         realtext.GetComponent<Text>().text = "Buy Shop £" + shopvalue;
 
