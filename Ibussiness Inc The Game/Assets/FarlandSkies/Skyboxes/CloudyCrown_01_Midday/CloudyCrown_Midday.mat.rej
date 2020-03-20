@@ -1,0 +1,10 @@
+diff a/Ibussiness Inc The Game/Assets/FarlandSkies/Skyboxes/CloudyCrown_01_Midday/CloudyCrown_Midday.mat b/Ibussiness Inc The Game/Assets/FarlandSkies/Skyboxes/CloudyCrown_01_Midday/CloudyCrown_Midday.mat	(rejected hunks)
+@@ -95,7 +95,7 @@
+     - _Mode: 0
+     - _OcclusionStrength: 1
+     - _Parallax: 0.02
+-    - _Rotation: 305.66794
++    - _Rotation: 101.995705
+     - _SrcBlend: 1
+     - _SunDisk: 2
+     - _SunSize: 0.732
