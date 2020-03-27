@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Perchaselog : MonoBehaviour
 {
@@ -8,11 +9,19 @@ public class Perchaselog : MonoBehaviour
     public GameObject Autosell;
     public GameObject Pathway1;
     public GameObject Pathway2;
+    public AudioSource Up1;
+    public AudioSource Up2;
 
     public static bool havebaker = false;
     public static bool haveshop = false;
     public static int baker = 0;
     public static int shop = 0;
+
+    public void Start()
+    {
+        Up1 = GetComponent<AudioSource>();
+        Up2 = GetComponent<AudioSource>();
+    }
 
     public void Update()
     {
@@ -56,6 +65,8 @@ public class Perchaselog : MonoBehaviour
     {
         //Pathway2.SetActive(false);
         Autononcookie.SetActive(true);
+        
+        Up1.Play();
         Globalcash.Countcash -= GlobalBaker.bakervalue;
         GlobalBaker.bakervalue *= 3;
         GlobalBaker2.bakervalue *= 2;
@@ -64,6 +75,7 @@ public class Perchaselog : MonoBehaviour
         GlobalBaker.numofbakers += 1;
         GlobalBaker.allbakers += 1;
         GlobalBaker.fullbps += 1;
+        
         havebaker = true;
         
     }
@@ -71,6 +83,7 @@ public class Perchaselog : MonoBehaviour
     {
         //Pathway1.SetActive(false);
         Autononcookie.SetActive(true);
+        Up2.Play();
         Globalcash.Countcash -= GlobalBaker2.bakervalue;
         GlobalBaker.bakervalue *= 3;
         GlobalBaker2.bakervalue *= 2;
@@ -84,6 +97,7 @@ public class Perchaselog : MonoBehaviour
     public void StartAutosell1()
     {
         Autosell.SetActive(true);
+        Up1.Play();
         Globalcash.Countcash -= GlobalShop.shopvalue;
         GlobalShop.shopvalue *= 3;
         GlobalShop2.shopvalue *= 2;
@@ -97,6 +111,7 @@ public class Perchaselog : MonoBehaviour
     public void StartAutosell2()
     {
         Autosell.SetActive(true);
+        Up2.Play();
         Globalcash.Countcash -= GlobalShop2.shopvalue;
         GlobalShop.shopvalue *= 3;
         GlobalShop2.shopvalue *= 2;
