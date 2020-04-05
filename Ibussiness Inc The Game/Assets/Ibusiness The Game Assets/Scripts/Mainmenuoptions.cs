@@ -17,6 +17,7 @@ public class Mainmenuoptions : MonoBehaviour
        PlayerPrefs.SetInt("SavedValue", 10);
         PlayerPrefs.SetInt("Baker", 0);
         PlayerPrefs.SetInt("Shop", 0);
+        PlayerPrefs.SetInt("bar", 5);
         Globalnotcookies.Countnotforcookies = 0;
         Globalcash.Countcash = 0;
 
@@ -40,7 +41,10 @@ public class Mainmenuoptions : MonoBehaviour
 
         Gameloader.savedvalue = 10;
 
+       
+
         SceneManager.LoadScene("Mainscene");
+        Perchaselog.barcount = 5;
     }
 
     public void Loadgame()

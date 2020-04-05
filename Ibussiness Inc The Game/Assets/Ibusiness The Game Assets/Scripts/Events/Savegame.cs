@@ -35,7 +35,8 @@ public class Savegame : MonoBehaviour
         savevalue *= 2;
         PlayerPrefs.SetInt("SavedValue", savevalue);
         PlayerPrefs.SetInt("Baker", Perchaselog.shop);
-        PlayerPrefs.SetInt("shop", Perchaselog.baker);
+        PlayerPrefs.SetInt("Shop", Perchaselog.baker);
+        PlayerPrefs.SetInt("bar", Perchaselog.barcount);
 
     }
 

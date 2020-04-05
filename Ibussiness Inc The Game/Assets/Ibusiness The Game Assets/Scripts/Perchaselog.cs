@@ -12,6 +12,8 @@ public class Perchaselog : MonoBehaviour
     public AudioSource Up1;
     public AudioSource Up2;
 
+    public static int barcount = 5;
+    
     public static bool havebaker = false;
     public static bool haveshop = false;
     public static int baker = 0;
@@ -75,7 +77,7 @@ public class Perchaselog : MonoBehaviour
         GlobalBaker.numofbakers += 1;
         GlobalBaker.allbakers += 1;
         GlobalBaker.fullbps += 1;
-        
+        barcount += 1;
         havebaker = true;
         
     }
@@ -92,6 +94,7 @@ public class Perchaselog : MonoBehaviour
         GlobalBaker2.bakepersec += 1;
         GlobalBaker.allbakers += 1;
         GlobalBaker.fullbps += 1;
+        barcount -= 1;
         havebaker = true;
     }
     public void StartAutosell1()
@@ -106,6 +109,7 @@ public class Perchaselog : MonoBehaviour
         GlobalShop.numofshops += 1;
         GlobalShop.allshops += 1;
         GlobalShop.fullsps += 1;
+        barcount += 1;
         haveshop = true;
     }
     public void StartAutosell2()
@@ -120,6 +124,7 @@ public class Perchaselog : MonoBehaviour
         GlobalShop2.numofshops += 1;
         GlobalShop.allshops += 1;
         GlobalShop.fullsps += 1;
+        barcount -= 1;
         haveshop = true;
 
     }

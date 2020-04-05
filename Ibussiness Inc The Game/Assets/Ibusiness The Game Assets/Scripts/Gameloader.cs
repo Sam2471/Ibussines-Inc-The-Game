@@ -11,6 +11,7 @@ public class Gameloader : MonoBehaviour
     public static int savedvalue;
     public static int savedb;
     public static int saveds;
+    public static int savedbar;
   
 
 
@@ -42,6 +43,9 @@ public class Gameloader : MonoBehaviour
 
             saveds = PlayerPrefs.GetInt("Shop");
             Perchaselog.shop = saveds;
+
+            savedbar = PlayerPrefs.GetInt("bar");
+            Perchaselog.barcount = savedbar;
 
             
 
