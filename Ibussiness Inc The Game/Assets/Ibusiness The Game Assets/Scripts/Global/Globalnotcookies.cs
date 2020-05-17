@@ -12,7 +12,7 @@ public class Globalnotcookies : MonoBehaviour
     void Update()
     {
         Internalnotcookie = Countnotforcookies;
-        Displaynotforcookies.GetComponent<Text>().text = "Noncookies: " + Internalnotcookie;
+        Displaynotforcookies.GetComponent<Text>().text = "Products: " + Internalnotcookie;
     }
 
 

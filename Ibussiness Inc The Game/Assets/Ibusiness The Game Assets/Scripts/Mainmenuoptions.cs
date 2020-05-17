@@ -22,29 +22,29 @@ public class Mainmenuoptions : MonoBehaviour
         Globalcash.Countcash = 0;
 
         GlobalBaker.bakepersec = 0;
-        GlobalBaker2.bakepersec = 0;
+        
         GlobalBaker.numofbakers = 0;
-        GlobalBaker2.numofbakers = 0;
+        
         GlobalBaker.bakervalue = 10;
         GlobalBaker2.bakervalue = 5;
         GlobalBaker.allbakers = 0;
         GlobalBaker.fullbps = 0;
 
         GlobalShop.shoppersec = 0;
-        GlobalShop2.shoppersec = 0;
+ 
         GlobalShop.numofshops = 0;
-        GlobalShop2.numofshops = 0;
+       
         GlobalShop.shopvalue = 20;
         GlobalShop2.shopvalue = 10;
         GlobalShop.allshops = 0;
         GlobalShop.fullsps = 0;
 
-        Gameloader.savedvalue = 10;
+        Savegame.savevalue = 10;
 
        
 
         SceneManager.LoadScene("Mainscene");
-        Perchaselog.barcount = 5;
+        Perchaselog.barcount = 10;
     }
 
     public void Loadgame()

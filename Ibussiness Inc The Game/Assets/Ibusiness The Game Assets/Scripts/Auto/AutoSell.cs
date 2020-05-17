@@ -11,7 +11,7 @@ public class AutoSell : MonoBehaviour
 
     void Update()
     {
-        cashincrease = GlobalShop.shoppersec +  GlobalShop2.shoppersec;
+        cashincrease = GlobalShop.shoppersec;
         Internalincrease = cashincrease;
         if (Creatingcash == false)
         {

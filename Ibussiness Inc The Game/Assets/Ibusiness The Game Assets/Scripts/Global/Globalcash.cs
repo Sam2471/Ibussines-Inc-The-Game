@@ -12,7 +12,7 @@ public class Globalcash : MonoBehaviour
     void Update()
     {
         Internalcash = Countcash;
-        Displaycash.GetComponent<Text>().text = "Cashyo: £" + Internalcash;
+        Displaycash.GetComponent<Text>().text = "Cash: £" + Internalcash;
     }
 
 }

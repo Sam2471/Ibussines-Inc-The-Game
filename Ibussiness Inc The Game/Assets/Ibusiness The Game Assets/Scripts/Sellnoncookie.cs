@@ -7,10 +7,11 @@ public class Sellnoncookie : MonoBehaviour
 {
     public GameObject textBox;
     public GameObject statusBox;
+    public static int cashmultiple = 1; 
 
     public void Clickonbutton()
     {
-        if (Globalnotcookies.Countnotforcookies == 0)
+        if (Globalnotcookies.Countnotforcookies <= 0)
         {
             statusBox.GetComponent<Text>().text = "Not enough noncookies to sell";
             statusBox.GetComponent<Animation>().Play("StatusAnim");
@@ -18,8 +19,8 @@ public class Sellnoncookie : MonoBehaviour
 
         else
         {
-            Globalnotcookies.Countnotforcookies -= 1;
-            Globalcash.Countcash += 1;
+            Globalnotcookies.Countnotforcookies -= cashmultiple;
+            Globalcash.Countcash += cashmultiple;
         }
 
 

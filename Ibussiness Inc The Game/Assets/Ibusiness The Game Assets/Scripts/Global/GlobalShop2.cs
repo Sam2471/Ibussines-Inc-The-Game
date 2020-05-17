@@ -16,8 +16,7 @@ public class GlobalShop2 : MonoBehaviour
     public static bool turnoffbutton = false;
     public GameObject shopstats;
 
-    public static int numofshops;
-    public static int shoppersec;
+    
 
    
     void Update()
@@ -27,20 +26,28 @@ public class GlobalShop2 : MonoBehaviour
         faketext.GetComponent<Text>().text = "Buy Shop £" + shopvalue;
         realtext.GetComponent<Text>().text = "Buy Shop £" + shopvalue;
 
-        if (currentcash >= shopvalue)
+        if (GlobalShop.numofshops == 5)
+        {
+            // max upgrades
+            fakebutton.SetActive(true);
+            realbutton.SetActive(false);
+            faketext.GetComponent<Text>().text = " Maxed Out ";
+        }
+
+        else if (currentcash >= shopvalue)
         {
             fakebutton.SetActive(false);
             realbutton.SetActive(true);           
                       
         }
 
-        if (currentcash < shopvalue)
+        else if (currentcash < shopvalue)
         {
             fakebutton.SetActive(true);
             realbutton.SetActive(false);
         }
 
-        if (turnoffbutton == true)
+        else if (turnoffbutton == true)
         {
             realbutton.SetActive(false);
             fakebutton.SetActive(true);

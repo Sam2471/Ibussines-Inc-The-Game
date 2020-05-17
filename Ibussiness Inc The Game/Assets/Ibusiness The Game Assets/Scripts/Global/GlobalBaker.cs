@@ -23,23 +23,33 @@ public class GlobalBaker : MonoBehaviour
     void Update()
     {
         currentcash = Globalcash.Countcash;
-        bakerstats.GetComponent<Text>().text = "NonBaker: " + allbakers + " @ " + fullbps + " per second";
-        faketext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
-        realtext.GetComponent<Text>().text = "Buy NoncookieBaker £" + bakervalue;
+        bakerstats.GetComponent<Text>().text = "Factories: " + allbakers + " @ " + fullbps + " per second";
+        faketext.GetComponent<Text>().text = "Buy Factory £" + bakervalue;
+        realtext.GetComponent<Text>().text = "Buy Factory £" + bakervalue;
 
-        if (currentcash >= bakervalue)
+        if (bakepersec == 5)
         {
+            // max upgrades
+            fakebutton.SetActive(true);
+            realbutton.SetActive(false);
+            faketext.GetComponent<Text>().text = " Maxed Out ";
+        }
+
+        else if (currentcash >= bakervalue)
+        {
+            // activate
             fakebutton.SetActive(false);
             realbutton.SetActive(true);
         }
 
-        if (currentcash < bakervalue)
+        else if (currentcash < bakervalue)
         {
+            // not enough cash
             fakebutton.SetActive(true);
             realbutton.SetActive(false);
         }
 
-        if (turnoffbutton == true)
+        else if (turnoffbutton == true)
         {
             realbutton.SetActive(false);
             fakebutton.SetActive(true);
